@@ -1,0 +1,184 @@
+@font-face {
+    font-family:Poppins ;
+    src: url(font/Poppins-Bold.ttf);
+   
+}
+@font-face {
+    font-family:OpenSans ;
+    src: url(font/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+body{
+    background-image: url(images/bg-desktop.svg);
+    background-color: hsl(257, 40%, 49%);;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+.container::before,
+.container::after{
+    content: '';
+    display: table;
+}
+.container::after{
+    clear: both;
+}
+.row{
+    margin: 0 -15px;
+}
+.row::before,
+.row::after{
+    content: '';
+    display: table;
+}
+.row::after{
+    clear: both;
+}
+.col-12,
+.col-6,
+.col-66{
+    position: relative;
+    min-height: 1px;
+    padding: 0 15px;
+}
+.col-12{
+    float: left;
+    width: 100%;
+}
+.card{
+    margin-bottom: 3rem;
+}
+.card-2 {
+    padding: 4rem;
+}
+h1{
+    display: inline;
+    font-family: Poppins;
+    font-size: 3vmax;
+    color: #fff;
+    font-weight: 200;
+    
+}
+.icon{
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    
+}
+.card-2 .icon h1{
+    margin-bottom: 40px;
+}
+.imgage1{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.buld{
+    font-family:OpenSans;
+    font-size:3vmax;
+    color: #fff;
+}
+.huddle2{
+    font-family:OpenSans;
+    font-size: 1.4vmax;
+    color: #fff;
+}
+.btn{
+    width: 170px;
+    height: 45px;
+    color: hsl(257, 40%, 49%);
+    font-size: 1em;
+    font-family:OpenSans;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 5px 5px 8px hsl(257, 52%, 33%);
+    font-weight: 500;
+}
+.btn:hover,
+.twitt:hover
+{
+    background-color:hsl(300, 69%, 71%) ;
+    color: white;
+    cursor: pointer;
+}
+
+.icon2{
+    display: inline;
+    width: 25px;
+    height: 25px;
+    color: #fff;
+    margin: -70px 8px 50px 8px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+   }
+   .fot{
+       margin-left: auto;
+       margin-right: auto;
+       text-align: right;
+   }
+   .twitt:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+
+@media (max-width:415px){
+    .buld,
+    .huddle2,
+    .fot,
+    .btn
+    {
+        text-align: center;
+    }
+
+}
+@media (max-width:819px){
+ .buld,
+  .huddle2,
+  .fot,
+  .btn
+    {
+        text-align: center;
+    }
+
+ 
+ 
+}
+
+@media (min-width:768px){
+    container{
+        width: 750px;
+    }
+    
+    
+}
+@media (min-width:992px){
+    container{
+        width: 970px;
+    }
+    .col-6,
+    .col-66{
+        float: left;
+        
+    }
+    .col-6{
+        width: 45%;
+    }
+    .col-66{
+        width: 45%;
+    }
+   
+    
+   
+}
+@media (min-width:1200px){
+    container{
+        width: 1170px;
+    }
+}
